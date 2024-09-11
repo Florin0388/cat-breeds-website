@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumea pisicilor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="https://fonts.googleapis.com" />
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="hero">
+        <nav>
+          <h2 class="logo">Lumea <span>Pisicilor</span></h2>
+          <div class="hamburger" id="hamburger">
+            <i class="bx bx-menu"></i>
+          </div>
+          <ul id="nav-menu">
+            <li><a href="#about">Despre</a></li>
+            <li><a href="#rase">Rase</a></li>
+            <li><a href="#ingrijirea">Ingrijire</a></li>
+            <li><a href="#sanatatea">Sanatatea</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="hero-content">
+          <h2 class="text-animation">Bun venit pe Lumea Pisicilor!</h2>
+          <p>
+            Descoperă tot ce trebuie să știi despre îngrijirea, sănătatea și
+            rasele de pisici.
+          </p>
+          <div class="navigation-buttons">
+           <button id="backBtn"><img src="back-regular-25.png" alt=""></button>
+            <button id="nextBtn"><img src="play-regular-24.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-content">
+        <h2>Despre <span>pisici</span></h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus eos
+          beatae, ratione nulla facilis deleniti omnis ad autem quibusdam. Dolor
+          accusantium, maiores voluptatibus illo modi quisquam? Iusto dolores
+          rerum eligendi?
+        </p>
+        <button type="button">Citeste mai mult</button>
+      </div>
+    </section>
+
+    <section id="rase" class="rase">
+      <h2>Rase de Pisici</h2>
+      <div class="rase">
+        <div class="rasa">
+          <h3>Pisica Maine Coon</h3>
+          <p>
+            Maine Coon este una dintre cele mai mari și mai prietenoase rase de
+            pisici.
+          </p>
+          <img src="cat-4.webp" alt="" loading="lazy" />
+        </div>
+        <div class="rasa">
+          <h3>Pisica Siameză</h3>
+          <p>
+            Elegantă și vocală, Siameza este cunoscută pentru temperamentul său
+            afectuos.
+          </p>
+          <img src="cat-7.webp" alt="" loading="lazy"/>
+        </div>
+        <div class="rasa">
+          <h3>Pisica Bengal</h3>
+          <p>
+            Bengal este o rasă activă și jucăușă, cu o blană asemănătoare
+            leopardului.
+          </p>
+          <img src="cat-2.webp" alt="" loading="lazy"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="ingrijirea" class="ingrijirea">
+      <div class="title-content">
+        <h2>Îngrijirea Pisicilor</h2>
+        <p>
+          Află cum să îngrijești corect pisica ta în funcție de vârstă și nevoi.
+        </p>
+      </div>
+      <div class="content-ingrijire">
+        <article>
+          <h3>Alimentație</h3>
+          <p>
+            Pisicile au nevoie de o dietă echilibrată, bogată în proteine și
+            nutrienți esențiali.
+          </p>
+          <button type="button">Citeste mai mult</button>
+        </article>
+        <article>
+          <h3>Igiena</h3>
+          <p>
+            Îngrijirea blănii, curățarea urechilor și tăierea ghearelor sunt
+            esențiale pentru o pisică sănătoasă.
+          </p>
+          <button type="button">Citeste mai mult</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="sanatatea" class="sanatate">
+      <div class="title-sanatate">
+        <h2>Sănătatea Pisicii Tale</h2>
+      </div>
+
+      <div class="content-sanatate">
+        <div class="vizite">
+          <h3>Vizitele la Veterinar</h3>
+          <p>
+            Este important să duci pisica la veterinar pentru controale regulate
+            și vaccinuri.
+          </p>
+          <button type="button">Citeste mai mult</button>
+        </div>
+
+        <div class="simptome">
+          <h3>Simptome comune</h3>
+          <p>
+            Află cum să recunoști simptomele bolilor comune și cum să
+            reacționezi rapid.
+          </p>
+          <button type="button">Citeste mai mult</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contacteaza - <span>ne</span></h2>
+
+      <form id="contactForm" action="">
+        <div class="input-group">
+          <div class="input-box">
+            <input type="text" id="name" placeholder="Nume" required minlength="5"/>
+            <small class="error-message" id="nameError"></small>
+            <input type="email" id="email" placeholder="Email" required />
+            <small class="error-message" id="emailError"></small>
+          </div>
+
+          <div class="input-box">
+            <input type="number" id="phone" placeholder="Telefon" required pattern="[0-9]{10}" />
+            <small class="error-message" id="phoneError"></small>
+            <input type="text" id="subject" placeholder="Subiect" required minlength="5" />
+            <small class="error-message" id="subjectError"></small>
+          </div>
+        </div>
+        <div class="input-group-2">
+          <textarea
+            name=""
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Mesajul tau" required minlength="10"
+          ></textarea>
+          <small class="error-message" id="messageError"></small>
+          <button type="submit">Trimite mesaj</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="#"><i class='bx bxl-facebook-circle'></i></i></a>
+        <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+      </div>
+
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#rase">Rase de pisici</a>
+        </li>
+        <li>
+          <a href="#about">Despre pisici</a>
+        </li>
+        <li>
+          <a href="#contact">Contacteaza-ne</a>
+        </li>
+      </ul>
+
+      <p class="copyright">&copy; <span id="year">2024</span> Florin Zugrava | All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
